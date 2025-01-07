@@ -1,1 +1,18 @@
 {%extends 'base.html'%}
+{%contenuto%}
+<table>
+    <tr>
+        <td>CATEGORYID</td>
+        <td>CATEGORYNAME</td>
+        <td>DESCRIZIONE</td>
+    </tr>
+
+    {%for i in dettagli%}
+    <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[1]}}</td>
+        <td>{{i[2]}}</td>
+    </tr>
+    {%endfor%}
+</table>
+{%endblock%}
